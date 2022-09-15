@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>자식선택자</title>
+	<style>
+		#main > div { /*꺾쇠를 넣으면 자식요소를 뜻함*/
+			border: 4px solid gray;
+		}
+		ol > li {
+			list-style-type: square; /*리스트 스타일은 자식요소만 바뀜*/
+			font-weight: bold;
+			color: pink; /*font와 color는 자식요소와 하위요소까지 같이 바뀜*/
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>자식선택자</h1>
+	<p>선행 선택자인 부모 요소의 하위에 포함된 후행 선택자인 자식 요소를 선택하는 방법이다.</p>
+	<div id="main">
+		<div>
+			#main의 자식 요소
+			<div>
+				#main에 포함된 하위 요소
+			</div>
+		</div>
+	</div>
+	<hr>
+	<ol>
+		<li>첫 번째 목록
+			<ul>
+				<li>첫 번째 하위 목록</li>
+			</ul>
+		</li>
+		<li>두 번째 목록
+			<ul>
+				<li>두 번째 하위 목록</li>
+			</ul>
+		</li>
+		<li>세 번째 목록
+			<ul>
+				<li>세 번째 하위 목록</li>
+			</ul>
+		</li>
+	</ol>
+</body>
+</html>

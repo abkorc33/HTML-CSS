@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Descendant Combinator 하위선택자</title>
+	<style>
+		#main div { /*아이디 쓰고 띄어쓰고 태그 입력하면 해당 아이디 태그 하위의 태그를 의미*/
+			color: gray;
+			border: 3px dotted #d7bee2; /*3px solid currentcolor*/
+			background: #a9c7d8;
+		}
+		
+		#two {
+			color: gray;
+			border: 3px solid #c0df9f;
+			background: #f2e5a6;
+		}
+	</style>
+</head>
+<body>
+	<h1>하위선택자</h1>
+	<div id="main">
+		<div>
+			<p>하위선택자는 선행 선택자의 하위 요소 중 후행 선택자에 해당하는 요소를 선택하는 방법이다.</p>
+		</div>
+		<p id="two">하위선택자는 선행 선택자의 하위 요소 중 후행 선택자에 해당하는 요소를 선택하는 방법이다.</p>
+	</div>
+</body>
+</html>
