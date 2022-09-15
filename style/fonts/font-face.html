@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>font-face</title>
+	<style>
+	@font-face {
+		font-family: 'Nanum';
+		src: url('fontweb/NanumGothic.eot'); /*eot는 익스플로러에만 적용, #iefix 인터넷익스플로러에 픽스됐다는 뜻*/
+		src: url('fontweb/NanumGothic.eot?#iefix') format('embeded-opentype'),
+			url('fontweb/fontweb/NanumGothic.woff') format('woff'),
+			url('fontweb/fontweb/NanumGothic.ttf') format('truetype');
+	}
+	.font {
+		font-family: Arial, "맑은 고딕", sans-serif;
+	}
+	.webFont {
+		font-family: 'Nanum';
+	}
+	</style>
+</head>
+<body>
+	 <h1>font-face 알아보기</h1>
+	 <p class="font">
+	 이 문장은 Arial로, 없으면 "맑은 고딕체"로, 없으면 sans-serif로 적용된다.
+	 </p>
+	 
+	 <p class="webFont">
+	 나눔고딕체로 적용된다.
+	 </p>
+</body>
+</html>

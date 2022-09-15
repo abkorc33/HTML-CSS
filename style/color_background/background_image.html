@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>background_image</title>
+	<style>
+		p {
+			width: 200px;
+			height: 200px;
+			padding: 20px;
+			font-weight: bold;
+			border: 1px solid #000;
+			background-size: 50px 50px, 100px 50px, 200px 150px;
+			background-position: 150px 50px, 100px 70px, right bottom;
+			background-repeat: no-repeat;
+			}
+		.backgroundImg {
+			background-image: url(images/sun.png), url(images/cloud.png), url(images/tree.jpg);
+		}
+	</style>
+</head>
+<body>
+	<h1>background_image 속성</h1>
+	<p class="backgroundImg">다중 배경 그림 적용</p>
+</body>
+</html>

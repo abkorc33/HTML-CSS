@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>text-shadow</title>
+	<style>
+		p {
+			color: gray;
+			font-weight: bold;
+			font-size: 80px;
+			font-family: Helvetica, Arial, sans-serif;
+			margin: 30px;
+		}
+		/*text-shadow: x축 y축 blur(번짐) color;*/
+		.shadow_1 {
+			text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+		}
+		.shadow_2 {
+			text-shadow: 5px 10px 10px rgba(230, 230, 230), 10px 10px 10px #a9c7d8,
+						-10px -10px 5px #d7bee2;
+			
+		}
+		.shadow_3 {	/*도트그림자*/
+			text-shadow: 1px 0px 0px #000, 0px 1px 0px #000, -1px 0px 0px #000, 0px -1px 0px #000,
+						2px 0px 0px #000, 0px 2px 0px #000, -2px 0px 0px #000, 0px -2px 0px #000;
+		}
+		.shadow_4 {
+			text-shadow: 1px 1px 0px #000, 2px 2px 0px #000, 3px 3px 0px #000, 4px 4px 0px #000,
+						5px 5px 0px #000;
+		}
+	</style>
+</head>
+<body>
+	<h1>text-shadow 속성</h1>
+	<p class="shadow_1">TEXT</p>
+	<p class="shadow_2">TEXT</p>
+	<p class="shadow_3">TEXT</p>
+	<p class="shadow_4">TEXT</p>
+</body>
+</html>
