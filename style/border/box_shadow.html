@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>box-shadow</title>
+	<style>
+		div {
+			padding: 20px;
+			margin: 20px;
+			width: 100px;
+			height: 40px;
+			float: left;
+			font-weight: bold;
+			border: 5px solid #ccc;
+			color: #fff;
+			background: powderblue;
+		}
+		.inset {
+			box-shadow: inset 5px 5px 0px 0px gray; /*내부 그림자*/
+		}
+		.outset {
+			box-shadow: 5px 5px 0px 0px gray; /*바깥 그림자*/
+		}
+		.blur {
+			box-shadow: 5px 5px 5px 0px gray; /*블러효과*/
+		}
+		.spread {
+			box-shadow: 5px 5px 0px 10px gray;
+		}
+	</style>
+</head>
+<body>
+	<h1>box-shadow속성</h1>
+	<div class="inset"></div>
+	<div class="outset"></div>
+	<div class="blur"></div>
+	<div class="spread"></div>
+</body>
+</html>

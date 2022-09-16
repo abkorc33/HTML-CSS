@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>animation-iteration-count</title>
+	<style>
+		.animation_div {
+			position: absolute;
+			text-align: center;
+		}
+		.sample_1 {
+			left: 100px;
+		}
+		.sample_2 {
+			left: 450px;
+		}
+		@keyframes ani_1 {
+			from {transform: scale(0) rotate(0deg);}
+			to {transform: scale(1.0, 1.0) rotate(360deg);}
+		}
+		.animation_div img {
+			animation-name: ani_1;
+			animation-duration: 3s;
+		}
+		.sample_1 img {animation-iteration-count: 3;}
+		.sample_2 img {animation-iteration-count: infinite;}
+	</style>
+</head>
+<body>
+	<h1>animation-iteration-count 속성</h1>
+	<h2>애니메이션의 반복 횟수를 지정한다.</h2>
+	<div class="animation_div sample_1">
+		<img src="../../images/rabbit.png"/>
+		<p>애니메이션 3회 반복</p>
+	</div>
+	<div class="animation_div sample_2">
+		<img src="../../images/rabbit.png"/>
+		<p>애니메이션 무한 반복</p>
+	</div>
+</body>
+</html>

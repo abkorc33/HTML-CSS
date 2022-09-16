@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>box-decoration-break</title>
+	<style>
+		div {
+			padding: 20px;
+			margin: 50px;
+			width: 400px;
+			font-weight: bold;
+		}
+		span {
+			color: #fff;
+			border: gray solid 5px;
+			background: linear-gradient(to right, #f2e5a6 0%, #d7bee2 100%);
+			padding: 5px 20px;
+			line-height: 3; /*줄간격*/
+		}
+		.slice span {
+			-webkit-box-decoration-break: slice;
+			-o-box-decoration-break: slice;
+			box-decoration-break: slice;
+		}
+		.clone span {
+			-webkit-box-decoration-break: clone;
+			-o-box-decoration-break: clone;
+			box-decoration-break: clone;
+		}
+	</style>
+</head>
+<body>
+	<h1>box-decoration-break 속성</h1>
+	<div class="slice">
+		box-decoration-break는 요소 박스가 페이지나 단으로 인해 나뉘어졌거나 
+		<span>인라인 요소가 자동 줄바꿈 때문에 나뉘어졌을 경우 border나 padding을 추가할지 여부를 지정</span>
+		하는 속성입니다.
+	</div>
+	<div class="clone">
+		box-decoration-break는 요소 박스가 페이지나 단으로 인해 나뉘어졌거나 
+		<span>인라인 요소가 자동 줄바꿈 때문에 나뉘어졌을 경우 border나 padding을 추가할지 여부를 지정</span>
+		하는 속성입니다.
+	</div>
+</body>
+</html>
