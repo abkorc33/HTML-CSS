@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+
+
+body {
+	background-color: #F5FFFA;
+	margin: 0;
+	padding: 0;
+	font-size: 0.75em;
+	line-height: 1.2em;
+	color: gray;
+}
+
+/*웹 페이지를 중앙에 배치하는 css코드*/
+#wrap {
+	width: 971px;	/*각 웹페이지의 크기에 맞게 사이즈를 조정한다*/
+	text-align: left;
+	margin: 0;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../images/shadow.png);
+	background-reapeat: repeat-y;
+	min-height: 780px; /*최소한의 영역 확보*/
+}
+
+.clear {
+	clear: both;
+}
+
+#logo {
+	float: left;
+	width: 230px;
+	margin: 60px 0 0 40px;
+}
+
+header {
+	height: 151px;
+	margin: 0;
+	padding: 0;
+}
+
+#login {
+	float: right;
+	margin: 20px 80px 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	word-spacing: 5px;
+	}
+
+#login a {
+	text-decoration: none;
+	color: gray;
+}
+
+#login a:hover {
+	color: lightskyblue;
+}
+
+nav#top_menu { /*종속선택자*/
+	width: 600px;
+	margin: 50px 20px 0 0;
+	float: right;
+}
+
+nav#top_menu ul {
+	list-style: none;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: 100;
+	color: gray;
+}
+
+nav#top_menu ul li {
+	float: left;
+	margin: 0 5px;
+}
+
+nav#top_menu a {
+	dispaly: block;
+	height: 20px;
+	padding: 10px; /*a:hover를 통해 밑줄효과를 주기 위함*/
+	text-decoration: none;
+	color: gray;
+}
+
+nav#top_menu a:hover {
+	background-image: url(../images/blue.gif);
+	background-repeat: repeat-x; /*x축 방향으로*/
+	background-position: bottom;
+}
