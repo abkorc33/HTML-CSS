@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<!-- 합쳐지고 최소화된 최신 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<!-- 부가적인 테마 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<!-- jQuery -->
+	<script src="../js/jquery-3.6.1.js"></script>
+	<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Form</h1>
+		<form>
+			<div class="form-group">
+				<label>이메일 주소</label>
+				<input type="email" class="form-control" placeholder="이메일을 입력하세요."/>
+			</div>
+			<div class="form-group">
+				<label>비밀번호</label>
+				<input type="password" class="form-control" placeholder="비밀번호를 입력하세요."/>
+			</div>
+			<div class="form-group">
+				<label>파일 올리기</label>
+				<input type="file"/>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> 동의합니다.
+				</label>
+			</div>
+			<button type="submit" class="btn btn-info">확인</button>
+			<button type="reset" class="btn btn-danger">취소</button>
+			<button type="submit" class="btn btn-primary btn-xs">확인</button>
+			<button type="reset" class="btn btn-warning btn-lg">취소</button>
+		</form>
+	</div>
+	<hr>	
+	<div class="container">
+		<h2>Inline Form</h2>
+		<form class="form-inline">	<!-- 한줄 폼 -->
+			<div class="form-group">
+				<label>Email : </label>
+				<input type="email" class="form-control" placeholder="Enter Email"/>
+			</div>
+			<div class="form-group">
+				<label>Password : </label>
+				<input type="password" class="form-control" placeholder="Enter password"/>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"/>Remember Me
+				</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
