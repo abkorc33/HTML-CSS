@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<!-- 합쳐지고 최소화된 최신 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<!-- 부가적인 테마 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<!-- jQuery -->
+	<script src="../js/jquery-3.6.1.js"></script>
+	<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h2>Form control : textarea</h2>
+		<form>
+			<div class="form-group">
+				<label>자기소개</label>
+				<textarea class="form-control" rows="5" cols="80">Hi</textarea>
+			</div>
+			<hr>
+			<p>checkbox</p>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">야옹</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="" disabled>멍멍</label> <!-- disabled선택못함 -->
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">삐약</label>
+			</div>
+			<hr>
+			<p>checkbox-inline 가로배치</p>
+			<!-- 가로로만들기 -->
+			<label class="checkbox-inline">
+				<input type="checkbox" value="">야옹
+			</label>
+			<label class="checkbox-inline">
+				<input type="checkbox" value="">멍멍
+			</label>
+			<label class="checkbox-inline">
+				<input type="checkbox" value="">삐약
+			</label>
+		</form>
+		
+		<form>
+		<hr>
+		<p>radio checkbox 중복선택x</p>
+			<div class="radio">
+				<label><input type="radio" name="selectAnimal">Cat</label>
+			</div>
+			<div class="radio">
+				<label><input type="radio" name="selectAnimal" checked>Dog</label>
+				<!-- checked 입력하면 디폴트 값으로 선택되서 나옴 -->
+			</div>
+			<div class="radio">
+				<label><input type="radio" name="selectAnimal" disabled>bird</label>
+			</div>
+		</form>
+		
+		<form>
+		<hr>
+		<p>radio-inline 가로배치</p>
+			<label class="radio-inline"><input type="radio" name="selectAnimal">Cat</label>
+			<label class="radio-inline"><input type="radio" name="selectAnimal" checked>Dog</label>
+			<!-- checked 입력하면 디폴트 값으로 선택되서 나옴 -->
+			<label class="radio-inline"><input type="radio" name="selectAnimal" disabled>bird</label>
+		</form>
+		
+		<hr>
+		<form>
+			<div class="form-group">
+				<label>좋아하는 운동은?(select one)</label>
+				<select class="form-control">
+					<option>축구</option>
+					<option>야구</option>
+					<option>농구</option>
+					<option>배구</option>
+					<option>달리기</option>
+				</select>
+				<hr>
+				
+				<label>내가 좋아하는 동물은?(multi select)</label>
+				<select multiple class="form-control">
+					<option>고양이</option>
+					<option>호랑이</option>
+					<option>오리</option>
+					<option>강아지</option>
+					<option>앵무새</option>
+				</select>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+

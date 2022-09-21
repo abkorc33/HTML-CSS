@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<!-- 합쳐지고 최소화된 최신 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<!-- 부가적인 테마 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<!-- jQuery -->
+	<script src="../js/jquery-3.6.1.js"></script>
+	<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--<nav class="navbar navbar-default">  기본형태 -->
+	<nav class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar-fixed-top 스크롤 내려도 상단 바 고정 -->
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<!-- 창 크기가 줄었을 때 메뉴를 아이콘 안에 숨기기 -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button> 
+			
+				<a class="navbar-brand" href="https://abkorc33.tistory.com/">My Home</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="mymenu">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="https://github.com/abkorc33">Home</a></li>
+				<li><a href="#">회원관리</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">판매관리 
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">판매자로 입력</a></li>
+						<li><a href="#">월별 판매 현황</a></li>
+						<li><a href="#">대리점별 판매현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">통계관리</a></li>
+			</ul>
+			
+			<form class="navbar-form navbar-left" action="modal.html">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="검색" name="search"/>
+				</div>
+				<button type="submit" class="btn btn-warning">Submit</button>
+				
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="검색" name="search"/>
+					<div class="input-group-btn">
+						<button class="btn btn-info" type="submit">
+							<i class="glyphicon glyphicon-search"></i>
+						</button>
+					</div>
+				</div>
+			</form>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container" style="margin-top: 50px">
+		<h3>Fixed Navbar</h3>
+		<div class="row">
+			<div class="col-sm-4">
+				<p>The .navbar-brand can be applied to most elements, but an anchor works best as some elements might require utility classes or custom styles.</p>
+				<p>The .navbar-brand can be applied to most elements, but an anchor works best as some elements might require utility classes or custom styles.</p>
+			</div>
+			<div class="col-sm-4">
+				<p>The .navbar-brand can be applied to most elements, but an anchor works best as some elements might require utility classes or custom styles.</p>
+				<p>The .navbar-brand can be applied to most elements, but an anchor works best as some elements might require utility classes or custom styles.</p>
+			</div>
+			
+			<div class="col-sm-4">
+				<p>The .navbar-brand can be applied to most elements, but an anchor works best as some elements might require utility classes or custom styles.</p>
+				<p>The .navbar-brand can be applied to most elements, but an anchor works best as some elements might require utility classes or custom styles.</p>
+			</div>
+			
+			
+		</div>
+	</div>
+
+
+</body>
+</html>
