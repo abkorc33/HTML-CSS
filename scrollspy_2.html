@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<!-- 합쳐지고 최소화된 최신 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<!-- 부가적인 테마 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<!-- jQuery -->
+	<script src="../js/jquery-3.6.1.js"></script>
+	<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	
+	<style>
+	body {
+		position: relative;
+	}
+	
+	ul.nav-pills {
+		top: 20px;
+		position: fixed; /*좌상단 위치에 고정시킴*/
+	}
+	
+	div.col-sm-9 div {
+		height: 250px;
+		font-size: 25px;
+	}
+	#section1 {padding-top: 50px; height: 500px; color:white; background-color: #1e88e5;}
+	#section2 {padding-top: 50px; height: 500px; color:white; background-color: #673ab7;}
+	#section3 {padding-top: 50px; height: 500px; color:white; background-color: #ff9800;}
+	#section41 {padding-top: 50px; height: 500px; color:white; background-color: #00bcd4;}
+	#section42 {padding-top: 50px; height: 500px; color:white; background-color: #009688;}
+	
+	@media screen and (max-width: 810px) {
+		#section1, #section2, #section3, #section41, #section42 {
+			margin-left 150px;
+		}
+	}
+	
+	</style>
+</head>
+
+<body data-spy="scroll" data-target="#myscrollspy" data-offset="20">
+
+<div class="container">
+	<div class="row">
+		<nav class="col-sm-3" id="myscrollspy">
+		<!-- nav-pills 영역안에서 가로로 펼쳐짐, 세로메뉴 하려면 nav-stacked필요 -->
+			<ul class="nav nav-pills nav-stacked"> 
+				<li><a href="#section1">Section1</a></li>
+				<li><a href="#section2">Section2</a></li>
+				<li><a href="#section3">Section3</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Section4 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#section41">Section4-1</a></li>
+						<li><a href="#section42">Section4-2</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="col-sm-9">
+			<div id="section1" class="container-fluid">
+				<h1>Section 1</h1>
+				<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			</div>
+
+			<div id="section2" class="container-fluid">
+				<h1>Section 2</h1>
+				<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			</div>
+			
+			<div id="section3" class="container-fluid">
+				<h1>Section 3</h1>
+				<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			</div>
+			
+			<div id="section41" class="container-fluid">
+				<h1>Section 4-1 Submenu 1</h1>
+				<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			</div>
+			
+			<div id="section42" class="container-fluid">
+				<h1>Section 4-2 Submenu 2</h1>
+				<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			</div>
+		</div>
+	</div>
+</div>	
+	
+</body>
+</html>
